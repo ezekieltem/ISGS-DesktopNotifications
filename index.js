@@ -43,7 +43,7 @@ async function updateInfo(userData, json) {
 }
 
 async function addAccount() {
-    interface.question('What is the .ROBLOSECURITY cookie of the account you wish to add?\n**ALL DATA INSERTED INTO THIS APPLICATION IS STORED LOCALLY**\nIf you dont know how to get a cookie please look up a tutorial for your respective OS.\n', (reply) => {
+    interface.question('What is the .ROBLOSECURITY cookie of the account you wish to add?\n**ALL DATA INSERTED INTO THIS APPLICATION IS STORED LOCALLY**\nIf you dont know how to get a cookie please look up a tutorial for your respective OS/Browser.\n', (reply) => {
         console.log('Please standby...')
         noblox.setCookie(reply).then((userData) => {
             noblox.getPlayerInfo(userData.UserID).then((user) => {
