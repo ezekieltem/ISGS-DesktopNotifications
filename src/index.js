@@ -42,7 +42,7 @@ module.exports = async function (cookie) {
     noblox.setCookie(cookie).then(() => {
         console.log('Logged in!')
         console.log('Now listening to shout!')
-        noblox.onShout(GID2).on('data', (shout) => {
+        noblox.onShout(GID1).on('data', (shout) => {
             if (shout.body === lastShout) return
             imagehandler.getImage(shout.poster.userId).then((image) => {
                 console.log(image)
