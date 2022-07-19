@@ -6,12 +6,14 @@ Directly Through PowerShell, etc:
 2: Open "Windows PowerShell"
  2.1: If you are on other operating systems open the respective application to this.
 
-3: run "Set-Location <PATH>"
--3.1: replace "<PATH>" with the directory to the folder this .txt is located in
--3.2 If this directory path has any spaces in it, for example `C:\Users\ezeki\Desktop\Visual Studio Code` the points that have spaces surround them in "", so in this case 
+3: Run "npm i axios@0.27.2 noblox.js@4.13.1 node-notifier@10.0.1 opn@6.0.0"
+
+4: run "Set-Location <PATH>"
+-4.1: replace "<PATH>" with the directory to the folder this .txt is located in
+-4.2 If this directory path has any spaces in it, for example `C:\Users\ezeki\Desktop\Visual Studio Code` the points that have spaces surround them in "", so in this case 
 -----`C:\Users\ezeki\Desktop\Visual Studio Code` would become `C:\Users\ezeki\Desktop\"Visual Studio Code"`, etc
 
-4: run "node index.js"
+5: run "node index.js"
 
 --------------------------------------------------------------------
 
@@ -27,23 +29,26 @@ node index.js
 -2.2: replace "<PATH>" with the directory to the folder this .txt is located in
 -2.3 If this directory path has any spaces in it, for example `C:\Users\ezeki\Desktop\Visual Studio Code` the points that have spaces surround them in "", so in this case 
 -----`C:\Users\ezeki\Desktop\Visual Studio Code` would become `C:\Users\ezeki\Desktop\"Visual Studio Code"`, etc
-3: Run "Windows PowerShell" as Administrator.
--3.1: Run "Set-ExecutionPolicy Unrestricted"
--3.2: Run "Install-Module ps2exe"
--3.3: Finally Run "Invoke-ps2exe <PATH_TO_.ps1> <PATH_TO_WHERE_YOU_WANT_THE_EXE>"
--3.4: replace "<PATH_TO_.ps1> with the location of the ".ps1" file you created in step 2
--3.5: replace <PATH_TO_WHERE_YOU_WANT_THE_EXE> to the directory of where the ".exe" file will be found. Besure to include "/<NAME_HERE>.exe". (I would recommend the same directory as the ".ps1")
+
+3: Run "npm i axios@0.27.2 noblox.js@4.13.1 node-notifier@10.0.1 opn@6.0.0"
+
+4: Run "Windows PowerShell" as Administrator.
+-4.1: Run "Set-ExecutionPolicy Unrestricted"
+-4.2: Run "Install-Module ps2exe"
+-4.3: Finally Run "Invoke-ps2exe <PATH_TO_.ps1> <PATH_TO_WHERE_YOU_WANT_THE_EXE>"
+-4.4: replace "<PATH_TO_.ps1> with the location of the ".ps1" file you created in step 2
+-4.5: replace <PATH_TO_WHERE_YOU_WANT_THE_EXE> to the directory of where the ".exe" file will be found. Besure to include "/<NAME_HERE>.exe". (I would recommend the same directory as the ".ps1")
 ----- Example: `Invoke-ps2exe C:\Users\ezeki\Desktop\"ISGS Desktop Notifications"\PowerShellCommand.ps1 C:\Users\ezeki\Desktop\"ISGS Desktop Notifications"\ISGSDesktop.exe`
 
 --- FOR SHORTCUT ---
-4: RightClick the ".exe"
-4.1: Select "Create Shortcut"
-4.2: Move the created shortcut to where you would like it, such as your desktop
+5: RightClick the ".exe"
+5.1: Select "Create Shortcut"
+5.2: Move the created shortcut to where you would like it, such as your desktop
 
-5: Click (You may have to double click) the shortcut
+6: Click (You may have to double click) the shortcut
 
 --- FOR EXE ---
-4: RightClick the ".exe"
-4.1: Select "Pin To Taskbar"
+5: RightClick the ".exe"
+5.1: Select "Pin To Taskbar"
 
-5: Click (You may have to double click) the ".exe"
+6: Click (You may have to double click) the ".exe"
