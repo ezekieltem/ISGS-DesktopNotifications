@@ -1,3 +1,5 @@
+Video: https://youtu.be/3O8RomKXQ6s
+
 Directly Through PowerShell, etc:
 
 1: Install node.js
